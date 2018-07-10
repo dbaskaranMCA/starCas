@@ -1,0 +1,24 @@
+﻿#addATM {
+}
+
+    #addATM label span {
+        color: #ff0000;
+    }
+
+    #addATM .form-control {
+        font-size: .85rem;
+    }
+
+    #addATM .card-header {
+        background-color: rgb(226, 230, 236);
+    }
+
+.right-fix {
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+}
+
+#nprogress {
+    display: none;
+}
