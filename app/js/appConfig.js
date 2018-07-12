@@ -4,6 +4,7 @@ helmet.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when("/home", { templateUrl: "views/home.html", controller: "HomeController" })
          .when("/atm", { templateUrl: "views/atm.html", controller: "atmController" })
+         .when("/branch", { templateUrl: "views/branch.html", controller: "atmController" })
         .when("/addATM", { templateUrl: "views/addATM.html", })
         .when("/editATM", { templateUrl: "views/editATM.html", })
         .when("/viewATM", { templateUrl: "views/viewATM.html", })
