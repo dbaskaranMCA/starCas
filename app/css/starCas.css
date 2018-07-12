@@ -22,3 +22,239 @@
 #nprogress {
     display: none;
 }
+
+
+/*-------------------------Data-tables-----------------------------*/
+
+
+
+.dataTables_length, .dataTables_info {
+    float: left;
+}
+
+    .dataTables_length select {
+        padding: 5px 5px;
+        border: 1px solid #e2e6ec;
+        border-radius: 2px;
+    }
+
+div.dataTables_wrapper div.dataTables_filter input {
+    outline-offset: 0px;
+    border-radius: 2px;
+    border: 1px solid #e2e6ec;
+    padding: 5px;
+}
+
+
+.dataTables_paginate {
+    float: right;
+    border: 1px solid #e2e6ec;
+    padding: 5px 0px;
+    border-radius: 2px;
+}
+
+a.paginate_button.previous {
+    border-right: 1px solid #e2e6ec;
+    padding: 7px 10px;
+}
+
+a.paginate_button.next {
+    border-left: 1px solid #e2e6ec;
+    padding: 7px 10px;
+}
+
+.paginate_button.previous.disabled, .paginate_button.next.disabled {
+    background-color: #f1f0f0;
+    color: #808080;
+    cursor: not-allowed;
+}
+
+.paginate_button.next, .paginate_button.previous {
+    background-color: #03a9f4;
+    color: #fff;
+}
+
+.dataTables_paginate span a {
+    padding: 7px 10px;
+    border-right: 1px solid #e2e6ec;
+}
+
+    .dataTables_paginate span a:last-child {
+        padding: 7px 10px;
+        border-right: 0px solid #e2e6ec;
+    }
+
+.dataTables_paginate a {
+    cursor: pointer;
+}
+
+.dataTables_info {
+    padding: 7px 10px !important;
+}
+
+.table thead tr {
+    background-color: #03a9f4;
+    color: #fff;
+}
+
+.action-icon, .action-icon:hover {
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 4px;
+}
+
+.blue-bg {
+    background-color: #03a9f4;
+}
+
+.float-left {
+    float: left;
+}
+
+
+.btn-size {
+    padding: 3px 12px;
+    font-size: 15px;
+}
+
+.primary-btn-size {
+    padding: 4px 12px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.dataTables_filter label .search-icon-align {
+    right: 14%;
+    position: absolute;
+    padding-top: 8px;
+}
+
+.dataTables_wrapper label input {
+    padding-left: 10px !important;
+}
+
+
+/*-----------------------checkbox style----------------------------*/
+
+
+
+.checkbox {
+    padding: 0px 20px 0px 10px;
+}
+
+    .checkbox label {
+        display: inline-block;
+        position: relative;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+        .checkbox label::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            left: 0;
+            margin-left: 0px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            background-color: #fff;
+            -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+        }
+
+        .checkbox label::after {
+            display: inline-block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 0;
+            margin-left: 0px;
+            padding-left: 3px;
+            padding-top: 1px;
+            font-size: 11px;
+            color: #555555;
+        }
+
+    .checkbox input[type="checkbox"] {
+        opacity: 0;
+    }
+
+        .checkbox input[type="checkbox"]:focus + label::before {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        .checkbox input[type="checkbox"]:checked + label::after {
+            font-family: 'FontAwesome';
+            content: "\f00c";
+        }
+
+        .checkbox input[type="checkbox"]:disabled + label {
+            opacity: 0.65;
+        }
+
+            .checkbox input[type="checkbox"]:disabled + label::before {
+                background-color: #eeeeee;
+                cursor: not-allowed;
+            }
+
+    .checkbox.checkbox-circle label::before {
+        border-radius: 50%;
+    }
+
+    .checkbox.checkbox-inline {
+        margin-top: 0;
+    }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+    color: #fff;
+}
+
+
+
+input[type=checkbox], input[type=radio] {
+    margin-right: -10px !important;
+}
+
+
+.modal-header {
+    display: initial;
+}
+
+.modal-body p {
+    margin-bottom: 0px;
+}
+
+.back-atm-btn {
+    padding: 3px 25px;
+}
+
+.title-txt {
+    padding: 5px 0px 0px;
+    margin-bottom: 0px;
+}
+.right-8r{
+    right:8rem;
+}
+
+@media(max-width:1366px) {
+
+    .table-width {
+        width: 120%;
+    }
+
+    .table-responsive-md {
+        overflow-x: auto;
+    }
+}
