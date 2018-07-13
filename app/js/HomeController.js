@@ -6,7 +6,7 @@ helmetcontroller.controller('atmController', ['$scope', function ($scope) {
         dom: 'frtlip',
         language: {
             "searchPlaceholder": "search",
-            "search": '<i class="icon icon-search search-icon-align"></i>',
+            //"search": '<i class="icon icon-search search-icon-align"></i>',
 
             "paginate": {
                 "previous": '<i class="icon icon-angle-double-left"></i>',

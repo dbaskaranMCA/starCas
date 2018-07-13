@@ -97,11 +97,28 @@ a.paginate_button.next {
     color: #fff;
 }
 
-.action-icon, .action-icon:hover {
+.action-icon {
+    padding: 3px 5px;
+    color: #969696;
+    border-radius: 2px;
+    margin-right: 4px;
+    background-color: #dadada;
+}
+
+a.action-icon:hover {
     padding: 3px 5px;
     color: #fff;
     border-radius: 2px;
     margin-right: 4px;
+    background-color: #03a9f4;
+}
+
+.fab-top.btn-primary {
+    background-color: #03a9f4;
+}
+
+.danger .icon {
+    color: #fff;
 }
 
 .blue-bg {
@@ -244,9 +261,29 @@ input[type=checkbox], input[type=radio] {
     padding: 5px 0px 0px;
     margin-bottom: 0px;
 }
-.right-8r{
-    right:8rem;
+
+.right-8r {
+    right: 8rem;
 }
+
+.btn-primary {
+    background-color: #efefef;
+    color: #424344 !important;
+}
+
+    .btn-primary:focus, .btn-primary:hover {
+        color: #fff !important;
+    }
+
+.btn:hover {
+    border: 1px solid transparent;
+}
+
+.gray-bg {
+    background-color: #ececec;
+}
+
+
 
 @media(max-width:1366px) {
 
