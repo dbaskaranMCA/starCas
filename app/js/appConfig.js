@@ -19,7 +19,7 @@ helmet.config(["$routeProvider", function ($routeProvider) {
         .when("/ATMtype", { templateUrl: "views/ATMtype.html", })
         .when("/networkMonitor", { templateUrl: "views/networkMonitering.html", })
         .when("/hsmMonitor", { templateUrl: "views/hsmMonitor.html", })
-        .when("/txnMonitor", { templateUrl: "views/txnMonitor.html", })
+        .when("/txnMonitor", { templateUrl: "views/txnMonitor.html", controller: "txnMonitorController" })
         .when("/login", { templateUrl: "login.html", })
         .when("/About", { templateUrl: "templates/aboutView.html", })
         .otherwise({

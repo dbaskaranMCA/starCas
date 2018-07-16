@@ -295,3 +295,11 @@ input[type=checkbox], input[type=radio] {
         overflow-x: auto;
     }
 }
+
+.summery h5 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
