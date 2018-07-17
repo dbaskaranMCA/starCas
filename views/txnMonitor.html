@@ -1,4 +1,10 @@
-﻿<header class="blue accent-3 relative nav-sticky">
+﻿<style>
+    .dataTables_paginate.paging_simple_numbers{
+        display:none !important;
+    }
+</style>
+
+<header class="blue accent-3 relative nav-sticky">
     <div class="container-fluid text-white">
         <div class="row p-t-b-10 ">
             <div class="col">
@@ -17,7 +23,8 @@
             <!-- Basic Validation -->
             <div class="card mb-3 shadow no-b r-0">
                 <div class="card-header">
-                    <h6>ATM Live Transcation Monitor</h6>
+                    <h4 class="float-left title-txt">ATM Live Transcation Monitor</h4>
+                    <a href="javascript:void(0);" class="btn btn-primary float-right back-atm-btn"> <i class="icon icon-eye"></i>View Summery</a>
                 </div>
                 <div class="card-body">
                     <div class="box-body table-responsive  no-padding">
@@ -94,6 +101,109 @@
                                     <td>343sec</td>
                                     <td>Disconnected</td>
                                 </tr>
+                                <tr>
+                                    <td>183</td>
+                                    <td>D353</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Mn839</td>
+                                    <td>Airtel</td>
+                                    <td>23sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>183</td>
+                                    <td>D353</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Mn839</td>
+                                    <td>Airtel</td>
+                                    <td>23sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+
 
                             </tbody>
                         </table>
@@ -104,7 +214,7 @@
 
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
             <!-- Basic Validation -->
             <div class="card mb-3 shadow no-b r-0">
                 <div class="card-header">
@@ -117,8 +227,35 @@
 
 
         </div>
-        <div class="col-md-6">
+       
+        <div class="col-md-4">
             <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div id="barChart"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div id="pieChart"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--<div class="col-md-6">
             <div class="card mb-3 shadow no-b r-0">
                 <div class="card-header">
                     <h6>Transcation Monitor</h6>
@@ -136,32 +273,6 @@
             </div>
 
 
-        </div>
-        <div class="col-md-6">
-            <!-- Basic Validation -->
-            <div class="card mb-3 shadow no-b r-0">
-                <div class="card-header">
-                    <h6>Transcation Monitor</h6>
-                </div>
-                <div class="card-body">
-                    <div id="barChart"></div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="col-md-6">
-            <!-- Basic Validation -->
-            <div class="card mb-3 shadow no-b r-0">
-                <div class="card-header">
-                    <h6>Transcation Monitor</h6>
-                </div>
-                <div class="card-body">
-                    <div id="pieChart"></div>
-                </div>
-            </div>
-
-
-        </div>
+        </div>-->
     </div>
 </div>

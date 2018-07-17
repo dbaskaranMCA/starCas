@@ -18,55 +18,61 @@
             <div class="card mb-3 shadow no-b r-0">
                 <div class="card-header">
                     <h4 class="float-left title-txt">Institution  Details</h4>
-                    <a href="#!/institution" class="btn btn-primary float-right back-atm-btn">Institution</a>
+                    <!-- <a href="#!/institution" class="btn btn-primary float-right back-atm-btn">Institution</a>-->
                 </div>
                 <div class="card-body">
                     <form class="needs-validation" novalidate>
                         <div class="form-row">
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-12 mb-3">
                                 <div class="form-group">
-                                    <label for="validationCustom01">Institute Id <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Institute Id" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
+                                    <label for="inputState">Select Institution Name<span>*</span></label>
+                                    <select id="inputState" class="form-control">
+                                        <option>Select Institution</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">Institute Type <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Institute Id" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
+                            </div>
 
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group col-xs-6">
-                                    <label for="validationCustom01">Max Tele Pin count <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Max Tele Pin count" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group col-xs-6">
-                                    <label for="inputState">Institute Name <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Max Tele Pin count" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group col-xs-6">
-                                    <label for="validationCustom01">Institute Currency Code <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Atm Location" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary"><i class="icon icon-save"></i>Save </button>
+                            <button type="submit" class="btn btn-primary" ng-click="ShowHide()"><i class="icon icon-eye"></i>View </button>
+                        </div>
+                        <div class="" ng-show="IsVisible">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Institution ID</th>
+                                        <th>Institution Name</th>
+                                        <th>Institution Route Type</th>
+                                        <th>Institution Type</th>
+                                        <th>Insitution Currency Code</th>
+                                        <th>Max ATM Pin Tries Cnt</th>
+                                        <th>Max Tele Pin Tries Cnt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Testing</td>
+                                        <td>Normal</td>
+                                        <td>Normal</td>
+                                        <td>Normal</td>
+                                        <td>Normal</td>
+                                        <td>Normal</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
                         </div>
                     </form>
+
+
+
+
                 </div>
             </div>
 

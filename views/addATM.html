@@ -4,7 +4,7 @@
             <div class="col">
                 <h4>
                     <i class="icon-box"></i>
-                   Add ATM Details
+                    Add ATM Details
                 </h4>
             </div>
         </div>
@@ -20,64 +20,167 @@
                     <h4 class="float-left title-txt">ATM  Details</h4>
                     <a href="#!/atm" class="btn btn-primary float-right back-atm-btn">ATM</a>
                 </div>
-                <div class="card-body" >
+                <div class="card-body">
                     <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM Id <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Atm Id"  required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                        <div class="row ">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM Id <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Atm Id" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">Merchant Id <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Merchant Id </option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM Location <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Atm Location" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">ATM Type Id <span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">Acquirer Institution <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Acquirer Institution</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">Logging Flag <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Logging Flag</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM Master Key <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="ATM Master Key" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">ATM Logical Group <span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                        </select>
                                     </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Merchant Id <span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">Terminal Id <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Terminal Id " required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM Location <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Atm Location" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">Acquirer Bin <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Acquirer Bin " required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Acquirer Institution <span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option>Burger, Shake and a Smile</option>
+                                            <option>frosting">Sugar, Spice and all things nice</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Acquirer Branch <span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option>Burger, Shake and a Smile</option>
+                                            <option>Sugar, Spice and all things nice</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM config Id <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="ATM config Id " required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState"> Logging Flag <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="loggingFlag" checked data-toggle="toggle" data-onstyle="info">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState"> ATM Status <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="atmStatus" data-on="Active" data-off="Inactive" checked data-toggle="toggle" data-onstyle="info">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM Key len<span>*</span></label>
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM Master Key <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="ATM Master Key" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">ATM Common Key <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="ATM Common Key" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Max Noted Dispence <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Max Note Dispence" required>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom01">IP Address<span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="IP Address" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Port No <span>*</span></label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Port No " required>
+
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState"> Keep Alive <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="KeepAlive" checked data-toggle="toggle" data-onstyle="info">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState"> Connection Type <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="connectionType" data-on="Client" data-off="Server" checked data-toggle="toggle" data-onstyle="info">
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group text-center">
+                                    <img src="../assets/img/atm-icon-gray.png" />
+                                </div>
+                                <div class="form-group text-center">
+                                    <!--<img src="../assets/img/atm-icon-gray.png" />-->
+                                </div>
+                                <!--<img src="../assets/img/atm-icon-gray.png" />-->
                                 <div class="form-group">
                                     <label for="validationCustom01">Max Amount Dispence <span>*</span></label>
                                     <input type="text" class="form-control" id="validationCustom01" placeholder="Max Amount Dispence" required>
@@ -85,178 +188,53 @@
                                         Looks good!
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="inputState"> Header <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Header</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">EMV Enabled <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>EMV Enabled </option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="form-group">
-                                    <label for="inputState">ATM Type Id <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>ATM Type Id</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">Terminal Id <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Terminal Id " required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+
+                                <div class="row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState"> Header <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="toggle-one" checked data-toggle="toggle" data-on="HEX" data-off="ASCII" data-onstyle="info">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">EMV Enabled <span>*</span></label>
+                                        <div class="">
+                                            <input type="checkbox" id="toggle-two" checked data-toggle="toggle" data-onstyle="info">
+                                        </div>
                                     </div>
                                 </div>
+
+
                                 <div class="form-group">
-                                    <label for="validationCustom01">Acquirer Bin <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Acquirer Bin " required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">Acquirer Branch <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Acquirer Branch </option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <label for="inputState">Country <span>*</span></label>
+                                    <select class="selectpicker form-control" data-live-search="true">
+                                        <option>Hot Dog, Fries and a Soda</option>
+                                        <option>Burger, Shake and a Smile</option>
+                                        <option>Sugar, Spice and all things nice</option>
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">ATM Status <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>ATM Status</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM Common Key <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="ATM Common Key" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">IP Address<span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="IP Address" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState"> Keep Alive <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Keep Alive</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">City Name Enabled <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="City Name Enabled" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="form-group">
-                                    <label for="inputState">ATM Logical Group <span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>ATM Logical Group</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM config Id <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="ATM config Id " required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">ATM Key len<span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>ATM Key len</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputState">Max Note Dispence <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Max Note Dispence" required>
 
                                 </div>
-                                <div class="form-group">
-                                    <label for="inputState">Port No <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Port No " required>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">Connection type <span>*</span></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Connection type" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="validationCustom01">Country Code<span>*</span></label>
-                                    <select id="inputState" class="form-control">
-                                        <option>Country Code</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                
                             </div>
                         </div>
-                       <div class="form-group text-right">
-                           <button type="submit" class="btn btn-primary right-fix" ><i class="icon icon-save"></i>Save </button>
-                           <button type="submit" class="btn btn-warning right-fix right-8r"><i class="icon icon-refresh "></i>Reset </button>
-                       </div>
+
                     </form>
                 </div>
+
+
+
+
+
+
+
             </div>
-           
-           
+            <div class="form-group text-right">
+                <button type="submit" class="btn btn-primary right-fix"><i class="icon icon-save"></i>Save </button>
+                <button type="submit" class="btn btn-warning right-fix right-8r"><i class="icon icon-refresh "></i>Reset </button>
+            </div>
+
         </div>
-       
     </div>
+
+
 </div>
+

@@ -38,9 +38,32 @@
 
                         </div>
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary"><i class="icon icon-save"></i>Save </button>
+                            <button type="submit" class="btn btn-primary" ng-click="ShowHide()"><i class="icon icon-eye"></i>View </button>
+                        </div>
+                        <div class="" ng-show="IsVisible">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ATM Type</th>
+                                        <th>Description</th>
+                                        <th>Driver Channel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Type1</td>
+                                        <td>Testing</td>
+                                        <td>Normal</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
                         </div>
                     </form>
+
+
+
+
                 </div>
             </div>
 

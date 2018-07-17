@@ -44,6 +44,7 @@ helmetcontroller.controller('txnMonitorController', ['$scope', '$timeout', '$int
 
         },
 
+
         aoColumnDefs: [{
             orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
         }],
@@ -250,9 +251,130 @@ helmetcontroller.controller('txnMonitorController', ['$scope', '$timeout', '$int
     $interval($scope.reload, 60000);
 
 
-   
+
 
 
 
 
 }])
+
+
+helmetcontroller.controller('addAtmController', ['$scope', function ($scope, $timeout) {
+
+    //$('#atmTable').DataTable({
+    //    dom: 'frtlip',
+    //    language: {
+    //        "searchPlaceholder": "search",
+    //        //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+    //        "paginate": {
+    //            "previous": '<i class="icon icon-angle-double-left"></i>',
+    //            "next": '<i class="icon icon-angle-double-right"></i>'
+    //        },
+    //        sLengthMenu: "_MENU_"
+
+
+    //    },
+
+    //    aoColumnDefs: [{
+    //        orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+    //    }],
+    //    order: []
+    //});
+
+    $('#toggle-one').bootstrapToggle();
+    $('#toggle-two').bootstrapToggle();
+    $('#connectionType').bootstrapToggle();
+    $("#KeepAlive").bootstrapToggle();
+    $("#atmStatus").bootstrapToggle();
+    $('#loggingFlag').bootstrapToggle();
+    $('.selectpicker').selectpicker({});
+
+
+
+}]);
+
+helmetcontroller.controller('addBranchController', ['$scope', function ($scope, $timeout) {
+
+    //$('#atmTable').DataTable({
+    //    dom: 'frtlip',
+    //    language: {
+    //        "searchPlaceholder": "search",
+    //        //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+    //        "paginate": {
+    //            "previous": '<i class="icon icon-angle-double-left"></i>',
+    //            "next": '<i class="icon icon-angle-double-right"></i>'
+    //        },
+    //        sLengthMenu: "_MENU_"
+
+
+    //    },
+
+    //    aoColumnDefs: [{
+    //        orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+    //    }],
+    //    order: []
+    //});
+
+    $('#toggle-one').bootstrapToggle();
+    $('#toggle-two').bootstrapToggle();
+    $('#connectionType').bootstrapToggle();
+    $("#KeepAlive").bootstrapToggle();
+    $("#atmStatus").bootstrapToggle();
+    $('#loggingFlag').bootstrapToggle();
+    $('.selectpicker').selectpicker({});
+
+    $scope.IsVisible = false;
+
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+}]);
+
+helmetcontroller.controller('atmTypeController', ['$scope', function ($scope, $timeout) {
+
+
+    $scope.IsVisible = false;
+
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+}]);
+
+helmetcontroller.controller('addInstitutionController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+}]);
+helmetcontroller.controller('addProfileController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+    $("#loginIp").bootstrapToggle();
+    $('#consecutive').bootstrapToggle();
+    $("#passwordExpire").bootstrapToggle();
+    $("#force").bootstrapToggle();
+    $('.selectpicker').selectpicker({});
+
+}]);
+
+helmetcontroller.controller('addUserController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+    $("#status").bootstrapToggle();
+    $('.selectpicker').selectpicker({});
+
+}]);

@@ -11,6 +11,8 @@
     <title>StarCas</title>
     <link href="assets/css/app.css" rel="stylesheet" />
     <link href="app/css/starCas.css" rel="stylesheet" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="light">
@@ -37,7 +39,7 @@
                     <div class="clearfix"></div>
                     <div class="collapse multi-collapse" id="userSettingsCollapse">
                         <div class="list-group mt-3 shadow">
-                            <a href="index.html" class="list-group-item list-group-item-action ">
+                            <a href="#!/addProfile" class="list-group-item list-group-item-action ">
                                 <i class="mr-2 icon-umbrella text-blue"></i>Profile
                             </a>
                             <a href="javasctipt:void(0);" class="list-group-item list-group-item-action">
@@ -105,7 +107,7 @@
                             <a href="#!/ATMtype"><i class="icon icon-circle-o"></i>ATM Type</a>
                         </li>
                         <li>
-                            <a href="#!/institution"><i class="icon icon-circle-o"></i>Institution</a>
+                            <a href="#!/addInstitution"><i class="icon icon-circle-o"></i>Institution</a>
                         </li>
                         <li>
                             <a href="javascript:void(0);"><i class="icon icon-circle-o"></i>CBS</a>
@@ -298,6 +300,43 @@
                             </ul>
                         </li>
                     </ul>-->
+                </li>
+                <li>
+                    <a href="javasctipt:void(0);">
+                        <i class="icon icon-user-circle-o text-red s-18"></i>User Management<i class="icon icon-angle-left s-18 pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#!/addProfile"><i class="icon icon-circle-o"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><i class="icon icon-circle-o"></i>User <i class="icon icon-angle-left s-18 pull-right"></i></a>
+
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#!/addUser"><i class="icon icon-add"></i>Add User </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-edit"></i>Edit User</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-eye"></i>View User</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-edit"></i>Activity Report</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-trash"></i>Delete User</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-block"></i>Unblock User</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="icon icon-lock"></i>Reser Password </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <!--<li class="treeview">
                     <a href="javasctipt:void(0);">
@@ -574,6 +613,8 @@
 
 
     <script src="assets/js/app.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="assets/plugins/datatable/jquery.dataTables.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
