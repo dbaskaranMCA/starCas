@@ -378,3 +378,99 @@ helmetcontroller.controller('addUserController', ['$scope', function ($scope, $t
     $('.selectpicker').selectpicker({});
 
 }]);
+
+helmetcontroller.controller('profileController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+    $('#atmTable').DataTable({
+        dom: 'frtlip',
+        language: {
+            "searchPlaceholder": "search",
+            //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+            "paginate": {
+                "previous": '<i class="icon icon-angle-double-left"></i>',
+                "next": '<i class="icon icon-angle-double-right"></i>'
+            },
+            sLengthMenu: "_MENU_"
+
+
+        },
+
+        aoColumnDefs: [{
+            orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+        }],
+        order: []
+    });
+
+
+}]);
+
+helmetcontroller.controller('userController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+    $('#atmTable').DataTable({
+        dom: 'frtlip',
+        language: {
+            "searchPlaceholder": "search",
+            //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+            "paginate": {
+                "previous": '<i class="icon icon-angle-double-left"></i>',
+                "next": '<i class="icon icon-angle-double-right"></i>'
+            },
+            sLengthMenu: "_MENU_"
+
+
+        },
+
+        aoColumnDefs: [{
+            orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+        }],
+        order: []
+    });
+
+
+}]);
+
+helmetcontroller.controller('addUserController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+    $('.datepicker').datepicker({
+        startDate: '-3d'
+    });
+    $('#atmTable').DataTable({
+        dom: 'frtlip',
+        language: {
+            "searchPlaceholder": "search",
+            //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+            "paginate": {
+                "previous": '<i class="icon icon-angle-double-left"></i>',
+                "next": '<i class="icon icon-angle-double-right"></i>'
+            },
+            sLengthMenu: "_MENU_"
+
+
+        },
+
+        aoColumnDefs: [{
+            orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+        }],
+        order: []
+    });
+
+
+}]);

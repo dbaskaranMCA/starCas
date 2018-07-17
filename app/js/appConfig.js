@@ -20,8 +20,11 @@ helmet.config(["$routeProvider", function ($routeProvider) {
         .when("/networkMonitor", { templateUrl: "views/networkMonitering.html", })
         .when("/hsmMonitor", { templateUrl: "views/hsmMonitor.html", })
         .when("/txnMonitor", { templateUrl: "views/txnMonitor.html", controller: "txnMonitorController" })
+        .when("/txnMonitorLive", { templateUrl: "views/txnMonitorLive.html", controller: "txnMonitorController" })
         .when("/login", { templateUrl: "login.html", })
+        .when("/profile", { templateUrl: "views/profile.html", controller: "profileController" })
         .when("/addProfile", { templateUrl: "views/addProfile.html", controller: "addProfileController" })
+        .when("/user", { templateUrl: "views/user.html", controller: "userController" })
          .when("/addUser", { templateUrl: "views/addUser.html", controller: "addUserController" })
         .otherwise({
             redirectTo: '/home'

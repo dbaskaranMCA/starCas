@@ -1,0 +1,278 @@
+﻿<style>
+    .dataTables_paginate.paging_simple_numbers {
+        display: none !important;
+    }
+</style>
+
+<header class="blue accent-3 relative nav-sticky">
+    <div class="container-fluid text-white">
+        <div class="row p-t-b-10 ">
+            <div class="col">
+                <h4>
+                    <i class="icon-box"></i>
+                    ATM Monitor Details
+                </h4>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid my-3" id="addATM">
+    <div class="d-flex row">
+        <div class="col-md-12">
+            <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h4 class="float-left title-txt">ATM Live Transcation Monitor</h4>
+                    <a href="javascript:void(0);" class="btn btn-primary float-right back-atm-btn"> <i class="icon icon-eye"></i>View Summery</a>
+                </div>
+                <div class="card-body">
+                    <div class="box-body table-responsive  no-padding">
+                        <table class="table table-bordered" id="txnMonitor">
+                            <thead>
+                                <tr>
+                                    <th>MSG TYPE</th>
+                                    <th>CHN </th>
+                                    <th>TXN CODE</th>
+                                    <th>TERMINALID</th>
+                                    <th>TERMLOC</th>
+                                    <th>FROM ACCOUNT </th>
+                                    <th>TO ACCOUNT</th>
+                                    <th>TRACE NO</th>
+                                    <th>REF NUUM</th>
+                                    <th>TRAN DATE</th>
+                                    <th>TRAN TIME</th>
+                                    <th>AMOUNT</th>
+                                    <th>ACQUIRER INST</th>
+                                    <th>ISSUER INST</th>
+                                    <th>NETORK ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>183</td>
+                                    <td>D353</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Mn839</td>
+                                    <td>Airtel</td>
+                                    <td>23sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>183</td>
+                                    <td>D353</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Mn839</td>
+                                    <td>Airtel</td>
+                                    <td>23sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>183</td>
+                                    <td>D353</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Mn839</td>
+                                    <td>Airtel</td>
+                                    <td>23sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+                                <tr>
+                                    <td>123</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                    <td>23De</td>
+                                    <td>Raja</td>
+                                    <td>Approved</td>
+                                    <td>Raja998</td>
+                                    <td>Airtel</td>
+                                    <td>343sec</td>
+                                    <td>Disconnected</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-4">
+            <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div id="lineGraph"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-4">
+            <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div id="barChart"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <!-- Basic Validation -->
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div id="pieChart"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--<div class="col-md-6">
+            <div class="card mb-3 shadow no-b r-0">
+                <div class="card-header">
+                    <h6>Transcation Monitor</h6>
+                </div>
+                <div class="card-body">
+                    <div class="text-left summery">
+                        <h5>Todal CMD Txn Cnt : <strong>100</strong></h5>
+                        <h5>Todal FTR Txn Cnt : <strong>100</strong></h5>
+                        <h5>Todal PC Txn Cnt : <strong>100</strong></h5>
+                        <h5>Todal Non Financial Txn Cnt : <strong>100</strong></h5>
+                        <h5>Todal Transcations summary : <strong>100</strong></h5>
+                        <h5>Todal CMD Txn Cnt : <strong>100</strong></h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>-->
+    </div>
+</div>
