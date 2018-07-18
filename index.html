@@ -15,6 +15,19 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .treeview-menu .active {
+            background-color: #efefef;
+        }
+
+        .treeview.active > a {
+            background-color: #efefef;
+        }
+
+        .icon-circle {
+            color: #03a9f4;
+        }
+    </style>
 </head>
 <body class="light">
     <aside class="main-sidebar fixed offcanvas shadow" data-toggle='offcanvas'>
@@ -302,7 +315,8 @@
                         </li>
                     </ul>-->
                 </li>
-                <li>
+
+                <li class="treeview">
                     <a href="javasctipt:void(0);">
                         <i class="icon icon-user-circle-o text-red s-18"></i>User Management<i class="icon icon-angle-left s-18 pull-right"></i>
                     </a>
@@ -607,10 +621,66 @@
         $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
         });
+
+        //var url = window.location;
+
+        //$(".treeview li a").click(function () {
+
+        //    $('ul.sidebar-menu a').filter(function () {
+        //        return this.href == url;
+        //    }).parent().addClass('active');
+
+        //    // for treeview
+        //    $('ul.treeview-menu a').filter(function () {
+        //        return this.href == url;
+        //    }).parentsUntil(".sidebar-menu > .treeview-menu").addClass('active');
+
+        //});
+        //// for sidebar menu entirely but not cover treeview
+
+
+        var _urlpath = window.location;
+        var _lastTab = localStorage.getItem('lastTab');
+        var links = [];
+        $(window).on('hashchange', function (e) {
+            $(".sidebar-menu .treeview li").each(function () {
+                var _this = $(this);
+                var _str = _this.find('a').attr('href');
+                links.push(_str);
+
+                if (_str !== _urlpath.hash) {
+                    $(_this).removeClass('active').find(".icon-circle").removeClass("icon-circle").addClass("icon-circle-o");
+
+                } else {
+                    localStorage.setItem('lastTab', _urlpath);
+                    $(_this).addClass("active").find(".icon-circle-o").removeClass("icon-circle-o").addClass("icon-circle");
+                    $(_this).parents('li').children(".treeview-menu").css("display", "block");
+                    $(_this).parents('li').addClass("active");
+                }
+            });
+
+        })
+
+        $(".sidebar-menu .treeview li").each(function () {
+            var _this = $(this);
+            var _str = _this.find('a').attr('href');
+            links.push(_str);
+
+            if (_str !== _urlpath.hash) {
+                $(_this).removeClass('active').find(".icon-circle").removeClass("icon-circle").addClass("icon-circle-o");
+               
+
+            } else {
+                localStorage.setItem('lastTab', _urlpath);
+                $(_this).addClass("active").find(".icon-circle-o").removeClass("icon-circle-o").addClass("icon-circle");
+                $(_this).parents('li').children(".treeview-menu").css("display", "block");
+                $(_this).parents('li').addClass("active");
+            }
+        });
+
     </script>
 </body>
 </html>
-
 
 
 
