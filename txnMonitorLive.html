@@ -1,0 +1,570 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="" class="" ng-app="starCas">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <title>StarCas | Login</title>
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+    <link href="app/css/starCas.css" rel="stylesheet" />
+    <link href="app/css/starCas.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .dataTables_paginate.paging_simple_numbers {
+            display: none;
+        }
+    </style>
+</head>
+<body class="light">
+    <header class="blue accent-3 relative nav-sticky">
+        <div class="container-fluid text-white">
+            <div class="row p-t-b-10 ">
+                <div class="col">
+                    <h4>
+                        <i class="icon-box"></i>
+                        ATM Monitor Details
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid my-3" id="addATM">
+        <div class="d-flex row">
+            <div class="col-md-12">
+                <!-- Basic Validation -->
+                <div class="card mb-3 shadow no-b r-0" style="height: 400px; overflow-y: auto;">
+                    <div class="card-header">
+                        <h4 class="float-left title-txt">ATM Live Transcation Monitor</h4>
+                        <a href="javascript:void(0);" class="btn btn-primary float-right back-atm-btn"> <i class="icon icon-eye"></i>View Summery</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="box-body table-responsive  no-padding">
+                            <table class="table table-bordered" id="txnMonitor" style="width:125%">
+                                <thead>
+                                    <tr>
+                                        <th>MSG TYPE</th>
+                                        <th>CHN </th>
+                                        <th>TXN CODE</th>
+                                        <th>TERMINALID</th>
+                                        <th>TERMLOC</th>
+                                        <th>FROM ACCOUNT </th>
+                                        <th>TO ACCOUNT</th>
+                                        <th>TRACE NO</th>
+                                        <th>REF NUUM</th>
+                                        <th>TRAN DATE</th>
+                                        <th>TRAN TIME</th>
+                                        <th>AMOUNT</th>
+                                        <th>ACQUIRER INST</th>
+                                        <th>ISSUER INST</th>
+                                        <th>NETORK ID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>183</td>
+                                        <td>D353</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Mn839</td>
+                                        <td>Airtel</td>
+                                        <td>23sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>D353</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Mn839</td>
+                                        <td>Airtel</td>
+                                        <td>23sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>D353</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Mn839</td>
+                                        <td>Airtel</td>
+                                        <td>23sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                        <td>23De</td>
+                                        <td>Raja</td>
+                                        <td>Approved</td>
+                                        <td>Raja998</td>
+                                        <td>Airtel</td>
+                                        <td>343sec</td>
+                                        <td>Disconnected</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--<div class="col-md-6">
+                <div class="card mb-3 shadow no-b r-0">
+                    <div class="card-header">
+                        <h6>Transcation Monitor</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-left summery">
+                            <h5>Todal CMD Txn Cnt : <strong>100</strong></h5>
+                            <h5>Todal FTR Txn Cnt : <strong>100</strong></h5>
+                            <h5>Todal PC Txn Cnt : <strong>100</strong></h5>
+                            <h5>Todal Non Financial Txn Cnt : <strong>100</strong></h5>
+                            <h5>Todal Transcations summary : <strong>100</strong></h5>
+                            <h5>Todal CMD Txn Cnt : <strong>100</strong></h5>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>-->
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row card" style="flex-direction:initial;">
+
+            <div class="col-md-4">
+                <!-- Basic Validation -->
+                <div class="card mb-3  no-b r-0">
+                    <div class="text-center">
+                        <h4 class="p-10">Transcation Monitor</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="lineGraph"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-4">
+                <!-- Basic Validation -->
+                <div class=" mb-3  no-b r-0">
+                    <div class="text-center">
+                        <h4 class="p-10">Transcation Monitor</h4>
+                    </div>
+                    <div class="text-center ">
+                        <div id="barChart"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <!-- Basic Validation -->
+                <div class="card mb-3  no-b r-0">
+                    <div class="text-center">
+                        <h4 class="p-10">Transcation Monitor</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="pieChart"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script>
+        $('#txnMonitor').DataTable({
+            iDisplayLength: 100,
+            language: {
+                //"search": '<i class="icon icon-search search-icon-align"></i>',
+
+                "paginate": {
+                    "previous": '<i class="icon icon-angle-double-left"></i>',
+                    "next": '<i class="icon icon-angle-double-right"></i>'
+                },
+                sLengthMenu: "_MENU_"
+
+
+            },
+
+            searching: false,
+
+            aoColumnDefs: [{
+                orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
+            }],
+            order: []
+        });
+
+        Highcharts.chart('lineGraph', {
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: 'Line Graph'
+            },
+            subtitle: {
+                enabled: false
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            credits: {
+                enabled: false
+            },
+            yAxis: {
+                //title: {
+                //    text: 'Temperature'
+                //},
+                labels: {
+                    formatter: function () {
+                        return this.value;
+                    }
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: 'line1',
+                marker: {
+                    symbol: 'square'
+                },
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+                    y: 26.5,
+                    //marker: {
+                    //    symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
+                    //}
+                }, 23.3, 18.3, 13.9, 9.6]
+
+            }, {
+                name: 'line2',
+                marker: {
+                    symbol: 'diamond'
+                },
+
+                data: [{
+                    y: 3.9,
+                    //marker: {
+                    //    symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                    //}
+                }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+
+
+
+        Highcharts.chart('barChart', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Bar Chart'
+            },
+            subtitle: {
+                text: ''
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                categories: [
+                    'Jan',
+                    'Feb',
+                    'Mar',
+                    'Apr',
+                    'May',
+                    'Jun',
+                    'Jul',
+                    'Aug',
+                    'Sep',
+                    'Oct',
+                    'Nov',
+                    'Dec'
+                ],
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: ''
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Bar1',
+                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+            }, {
+                name: 'Bar2',
+                data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+            }]
+        });
+
+        Highcharts.chart('pieChart', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Pie Chart'
+            },
+            credits: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Chrome',
+                    y: 61.41,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Safari',
+                    y: 12.18
+                }, {
+                    name: 'Sogou Explorer',
+                    y: 3.64
+                }, {
+                    name: 'Opera',
+                    y: 12.6
+                }, {
+                    name: 'Other',
+                    y: 2.61
+                }]
+            }]
+        });
+
+
+
+        $scope.reload = function () {
+            //$http.get('http://localhost:3000/api/todos').
+            //    success(function (data) {
+            //        $scope.todos = data.todos;
+            //    });
+
+            $timeout(function () {
+                alert("Page has been refreshed")
+            }, 60000)
+        };
+        $scope.reload();
+
+        $interval($scope.reload, 60000);
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

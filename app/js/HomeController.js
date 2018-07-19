@@ -25,8 +25,15 @@ helmetcontroller.controller('atmController', ['$scope', function ($scope, $timeo
 
 
 }]);
+helmetcontroller.controller('txnMonitorController', ['$scope','$window', function ($scope, $window) {
 
-helmetcontroller.controller('txnMonitorController', ['$scope', '$timeout', '$interval', function ($scope, $timeout, $interval) {
+    $scope.OpenPopupWindow = function () {
+        $window.open("http://localhost:2126/txnMonitorLive.html", "popup", "width=300,height=200,left=10,top=150");
+    }
+}])
+helmetcontroller.controller('txnMonitorLiveController', ['$scope', '$timeout', '$interval', function ($scope, $timeout, $interval) {
+
+    
 
     $('#txnMonitor').DataTable({
         dom: 'frtlip',
@@ -44,6 +51,7 @@ helmetcontroller.controller('txnMonitorController', ['$scope', '$timeout', '$int
 
         },
 
+        
 
         aoColumnDefs: [{
             orderable: false, aTargets: [0, -1] //disable sorting for the 1st column
@@ -261,6 +269,21 @@ helmetcontroller.controller('txnMonitorController', ['$scope', '$timeout', '$int
 
 helmetcontroller.controller('addAtmController', ['$scope', function ($scope, $timeout) {
 
+
+
+    $scope.itemList = [{ id: 'firstField',count:'1' }];
+
+
+    $scope.addFields = function () {
+        var addnewStudent = $scope.itemList.length + 1;
+        $scope.itemList.push({ 'id': 'field' + addnewStudent,'count': addnewStudent });
+    }
+
+    $scope.deleteField = function () {
+        var itemLast = $scope.itemList.length - 1;
+        $scope.itemList.splice(itemLast);
+    };
+
     //$('#atmTable').DataTable({
     //    dom: 'frtlip',
     //    language: {
@@ -363,19 +386,13 @@ helmetcontroller.controller('addProfileController', ['$scope', function ($scope,
     $('#consecutive').bootstrapToggle();
     $("#passwordExpire").bootstrapToggle();
     $("#force").bootstrapToggle();
-    $('.selectpicker').selectpicker({});
 
 }]);
 
-helmetcontroller.controller('addUserController', ['$scope', function ($scope, $timeout) {
+helmetcontroller.controller('addUserController', ['$scope', function ($scope) {
 
-    $scope.IsVisible = false;
-    $scope.ShowHide = function () {
-        $scope.IsVisible = $scope.IsVisible = true;
-    }
 
-    $("#status").bootstrapToggle();
-    $('.selectpicker').selectpicker({});
+    
 
 }]);
 

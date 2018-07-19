@@ -224,9 +224,50 @@
                                     </select>
 
                                 </div>
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>D.S</th>
+                                                                <th>Denom Value</th>
+                                                                <th>Denom Currency Code</th>
+                                                                <th>action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr ng-repeat="item in itemList">
+                                                                <td>
+                                                                    <p>{{item.count}}</p>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" placeholder="Denom Value" class="form-control" ng-model="item.name" required>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" placeholder="Denom Currency Code" class="form-control" ng-model="item.price" required>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="javascript:void(0)" class="btn btn-success" ng-show="$last" ng-click="addFields()" style=" padding: 4px 10px;"><span class="icon-plus"></span></a>
+                                                                    <a href="javascript:void(0)" class="btn btn-danger btn-sm" ng-show="$last" ng-click="deleteField()" style=" padding: 4px 10px;"><span class="icon-minus"></span></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </div>
                         </div>
-
                     </form>
                 </div>
 
@@ -237,9 +278,9 @@
 
 
             </div>
-            <div class="form-group text-right">
-                <button type="submit" class="btn btn-primary right-fix"><i class="icon icon-save"></i>Save </button>
-                <button type="submit" class="btn btn-warning right-fix right-8r"><i class="icon icon-refresh "></i>Reset </button>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary "><i class="icon icon-save"></i>Save </button>
+                <button type="submit" class="btn btn-warning "><i class="icon icon-refresh "></i>Reset </button>
             </div>
 
         </div>
