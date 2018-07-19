@@ -474,3 +474,25 @@ helmetcontroller.controller('addUserController', ['$scope', function ($scope, $t
 
 
 }]);
+
+helmetcontroller.controller('atmMonitorController', ['$scope', function ($scope, $timeout) {
+
+    $scope.IsVisible = false;
+    $scope.ShowHide = function () {
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
+
+
+    $scope.gotoDiv = function(x) {
+        var newHash = 'anchor' + x;
+        if ($location.hash() !== newHash) {
+            $location.hash('anchor' + x);
+        } else {
+            $anchorScroll();
+        }
+    };
+
+
+});
+
+}]);

@@ -341,3 +341,75 @@ input[type=checkbox], input[type=radio] {
     top: 5px !important;
     font-size: 24px;
 }
+
+
+.btn-default {
+    border: 1px solid #9394962e;
+}
+
+    .btn-default:hover .icon-check {
+        color: #fff;
+    }
+
+    .btn-default:hover .icon-times-circle-o {
+        color: #fff;
+    }
+
+    .btn-default:hover .icon-info-circle {
+        color: #fff;
+    }
+
+
+.icon-check {
+    color: #4CAF50;
+}
+
+.icon-times-circle-o {
+    color: #ff0000;
+}
+
+.icon-info-circle {
+    color: #2979ff;
+}
+
+#goodStatus .card-header {
+    background-color: rgb(76, 175, 80) !important;
+}
+
+
+    #goodStatus .card-header h6 {
+        color: #fff;
+    }
+
+#OffLine .card-header {
+    background-color: #ff0000 !important;
+}
+
+#outOffService .card-header {
+    background-color: rgb(159, 160, 162);
+}
+
+
+#outOffService .icon-times-circle-o {
+    color: rgb(159, 160, 162);
+}
+
+#outOffService p {
+    color: rgb(159, 160, 162);
+}
+
+#goodStatus .card-header h6, #OffLine .card-header h6, #warning .card-header h6, #outOffService .card-header h6 {
+    color: #fff;
+}
+
+#warning .card-header {
+    background-color: #fcce54 !important;
+}
+
+#warning .icon-times-circle-o {
+    color: #fcce54 !important;
+}
+
+.red-atm img, .green-atm img {
+    width: 170px;
+}

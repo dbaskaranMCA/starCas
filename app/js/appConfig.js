@@ -26,6 +26,7 @@ helmet.config(["$routeProvider", function ($routeProvider) {
         .when("/addProfile", { templateUrl: "views/addProfile.html", controller: "addProfileController" })
         .when("/user", { templateUrl: "views/user.html", controller: "userController" })
          .when("/addUser", { templateUrl: "views/addUser.html", controller: "addUserController" })
+         .when("/atmMonitor", { templateUrl: "views/atmMonitor.html", controller: "atmMonitorController" })
         .otherwise({
             redirectTo: '/home'
         });
