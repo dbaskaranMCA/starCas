@@ -483,7 +483,7 @@ helmetcontroller.controller('atmMonitorController', ['$scope', function ($scope,
     }
 
 
-    $scope.gotoDiv = function(x) {
+    $scope.gotoDiv = function (x) {
         var newHash = 'anchor' + x;
         if ($location.hash() !== newHash) {
             $location.hash('anchor' + x);
@@ -493,6 +493,6 @@ helmetcontroller.controller('atmMonitorController', ['$scope', function ($scope,
     };
 
 
-});
+
 
 }]);
