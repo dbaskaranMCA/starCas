@@ -28,7 +28,7 @@ helmetcontroller.controller('atmController', ['$scope', function ($scope, $timeo
 helmetcontroller.controller('txnMonitorController', ['$scope','$window', function ($scope, $window) {
 
     $scope.OpenPopupWindow = function () {
-        $window.open("https://dbaskaranmca.github.io/starCas/txnMonitorLive.html", "popup");
+        $window.open("https://dbaskaranmca.github.io/starCas/txnMonitorLive.html", "popup","'width=750,height=750'");
     }
 }])
 helmetcontroller.controller('txnMonitorLiveController', ['$scope', '$timeout', '$interval', function ($scope, $timeout, $interval) {
