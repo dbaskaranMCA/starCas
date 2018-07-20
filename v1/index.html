@@ -49,6 +49,13 @@
             line-height: 20px;
             padding-top: 22px;
         }
+
+        .login-btn {
+            background-color: #313952;
+            padding: 5px 30px;
+            color: #fff !important;
+            border: 1px solid #313952;
+        }
     </style>
 </head>
 <body>
@@ -112,7 +119,7 @@
                                 <a href="#contact">Contact</a>
                             </li>
                             <li class="dropdown ">
-                                <a href="javascript:void(0);" data-toggle="modal" data-target="#login-box">Login</a>
+                                <button type="button" class="btn btn-primary login-btn" data-toggle="modal" data-target="#login-box">Login</button>
                             </li>
 
                         </ul>
@@ -567,13 +574,13 @@
                                     <img src="../assets/img/cashlink-logo.png" style="padding-bottom:20px" />
                                     <!--<h3 class="mt-2">Welcome Back</h3>-->
                                     <!--<label class="switch-light" onclick="">
-                        <input type="checkbox" id="switch-box" checked>
-                        <span class="alert alert-light">
-                            <span>Admin </span>
-                            <span>Institution</span>
-                            <a class="btn btn-info"></a>
-                        </span>
-                    </label>-->
+                                        <input type="checkbox" id="switch-box" checked>
+                                        <span class="alert alert-light">
+                                            <span>Admin </span>
+                                            <span>Institution</span>
+                                            <a class="btn btn-info"></a>
+                                        </span>
+                                    </label>-->
 
                                     <div class="switch-toggle alert alert-light">
                                         <input id="week" name="view" type="radio">
@@ -583,9 +590,9 @@
                                         <a class="btn btn-info"></a>
                                     </div>
                                     <!--<p class="p-t-b-20" style="margin-bottom:0px;">
-                        Hey Soldier welcome back signin now there is lot of new stuff waiting
-                        for you
-                    </p>-->
+                                        Hey Soldier welcome back signin now there is lot of new stuff waiting
+                                        for you
+                                    </p>-->
                                 </div>
                                 <form id="login-form-institution">
                                     <div class="form-group has-icon">
@@ -647,7 +654,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
 
         </div>
